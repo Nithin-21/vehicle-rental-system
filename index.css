@@ -1,4 +1,8 @@
 .home-container{
    text-align: center;
 }
-
+.poster{
+   display: flex;
+   justify-content: center;
+   
+ }
