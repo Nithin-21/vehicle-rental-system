@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookings - VRS vehicle Rentals</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bookings.css">
 </head>
 <body>
     <header class="headerfooter">
@@ -16,10 +17,61 @@
         <a  href="registration.html">Registration</a> &nbsp;&nbsp;
         <a  href="login.html">Login</a> &nbsp;&nbsp;
       </header>
-           
+      <br>
+      <h2>Past Bookings</h2>
+      <table>
+          <thead>
+              <tr>
+                  <th>Booking ID</th>
+                  <th>Vehicle Name</th>
+                  <th>Booking Date</th>
+                  <th>Start Time</th>
+                  <th>End Time</th>
+                  <th>Status</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>001</td>
+                  <td>Honda Civic</td>
+                  <td>2025-02-20</td>
+                  <td>10:00 AM</td>
+                  <td>2:00 PM</td>
+                  <td>Completed</td>
+              </tr>
+              <tr>
+                  <td>002</td>
+                  <td>Toyota Corolla</td>
+                  <td>2025-02-22</td>
+                  <td>1:00 PM</td>
+                  <td>5:00 PM</td>
+                  <td>Completed</td>
+              </tr>
+          </tbody>
+      </table>
+
+      <h2>Live Bookings</h2>
+      <div class="card-container">
+          <div class="card">
+              <h3>Vehicle: Toyota Camry</h3>
+              <p>Booking Date: 2025-02-25</p>
+              <p>Start Time: 10:00 AM</p>
+              <p style="color: green;">Status: Active</p>
+              <button onclick="setPendingStatus(this)">Return Vehicle</button>
+              <p class="status">Pending Confirmation</p>
+          </div>
+          <div class="card">
+              <h3>Vehicle: Honda Civic</h3>
+              <p>Booking Date: 2025-02-26</p>
+              <p>Start Time: 11:00 AM</p>
+              <p style="color: green;">Status: Active</p>
+              <button onclick="setPendingStatus(this)">Return Vehicle</button>
+              <p class="status">Pending Confirmation</p>
+          </div>
+      </div>
 
 
-      <br> <br> <br> <br> <br> <br> <br>  <br> <br> <br> <br> <br> <br> <br>  <br> <br> <br> <br> <br> <br> <br> 
+      <br> <br> <br> <br>
     <footer class="headerfooter">
         <p>© 2025 Vehicle Rental System</p>
     </footer>
